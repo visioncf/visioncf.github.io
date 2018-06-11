@@ -1,0 +1,145 @@
+/*## GLOBAL STYLING ##*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:Arial;
+}
+
+body,html{
+	height:100%;
+}
+
+h1{
+    color: #4a4a4a;
+}
+
+h2{
+    color: #666;
+}
+
+h3{
+    color:#8a8a8a;
+}
+.indent-list {
+    
+    padding-right: 15px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+
+/*## IMAGE FORMATTING ##*/
+/* Icons */
+.glyphicon-chevron-up {
+    color: #666;
+}
+
+
+.logo {
+	background-repeat: no-repeat;
+	z-index:100;
+	position:fixed;
+	max-width: 30%;
+	top:50px;
+	margin:10px;
+}
+
+/* PARALLAX */
+/* ensure content blocks are in front of logo */
+.content {
+	background-color: rgba(255,255,255,1);
+	padding:5% 5%;
+	position:relative;
+	z-index: 300;
+}
+
+/* image settings */
+.parallax-image {
+	background-attachment:fixed;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	max-width:100%;
+	position:relative;
+	opacity:0.65;
+		min-height:400px;
+}
+
+/* image locations */
+#bgAngelOfNorth{
+	background-image:url('../img/Angel_crop_1920x768.jpg');
+	min-height:600px;
+}
+#israel{
+	background-image:url('../img/flag-israel-landscape_1920x1080.jpg');
+}
+#mission{
+	background-image:url('../img/malawi_1440x823.jpg');
+}
+#bgTyneBridge{
+	background-image:url('../img/tyne-bridge_1600x1200.jpg');
+}
+
+/* smaller images for smaller screens */
+@media only screen and (max-width: 1023px){
+	#bgAngelOfNorth{
+	background-image:url('../img/Angel_crop_1024x410.jpg');
+}
+	#israel{
+	background-image:url('../img/flag-israel-landscape_1024x576.jpg');
+}	
+	#mission{
+	background-image:url('../img/malawi_1024x585.jpg');
+}
+    #bgTyneBridge{
+	background-image:url('../img/tyne-bridge_1024x768.jpg');
+}
+}
+
+/* CAROUSEL */
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #666;
+   /* margin: -100px;*/
+   width: 10%;
+}
+
+.carousel-indicators li {
+    border-color: #666;
+}
+
+.carousel-indicators li.active {
+    background-color: #666;
+}
+
+.item {
+    padding:0 10%;
+}
+
+.item h3 {
+    margin: 70px 0;
+}
+.item p {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+/*## CONTACT FORM ## */
+#subject {
+    display:none;
+}
+
+/*## FOOTER ##*/
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #666;
+}
