@@ -143,3 +143,7 @@ footer .glyphicon {
     margin-bottom: 20px;
     color: #666;
 }
+.footer-logo {
+    height: calc(10px + 1.5vmin);
+    margin: 12px 0px;
+}
